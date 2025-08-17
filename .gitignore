@@ -1,0 +1,75 @@
+# ----------------
+# Python
+# ----------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+*.log
+
+# Byte-compiled / cache
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# ----------------
+# Environments
+# ----------------
+.venv/
+venv/
+ENV/
+env/
+*.env
+.env.*
+.venv
+.env
+
+# ----------------
+# OS / IDE
+# ----------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ----------------
+# Data / DB
+# ----------------
+/data/db/*.db
+/data/reports/*.png
+*.sqlite3
+*.sqlite
+*.db
+
+# ----------------
+# Model / Transformers cache
+# ----------------
+.cache/
+huggingface/
+~/.cache/
+~/.huggingface/
+*.bin
+
+# ----------------
+# Jupyter / Notebooks
+# ----------------
+.ipynb_checkpoints/
+*.ipynb
+
+# ----------------
+# Build / Dist
+# ----------------
+build/
+dist/
+*.spec
+*.lock
+*.tar.gz
+*.whl
