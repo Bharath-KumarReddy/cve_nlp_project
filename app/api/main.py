@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends
+from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
 from app.database import SessionLocal
 from app.api.routers import cves as cves_router
@@ -12,6 +13,10 @@ def get_db():
         db.close()
 
 app = FastAPI(title="CVE NLP Database", version="1.0.0")
+
+@app.get("/")
+def root():
+    return RedirectResponse(url="/docs")
 
 @app.get("/health")
 def health(db: Session = Depends(get_db)):
