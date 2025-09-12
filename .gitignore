@@ -2,6 +2,7 @@
 # Python
 # ----------------
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
@@ -73,3 +74,16 @@ dist/
 *.lock
 *.tar.gz
 *.whl
+
+# ----------------
+# FastAPI / Uvicorn / Logs
+# ----------------
+*.log
+__pycache__/
+*.db-journal
+
+# ----------------
+# Streamlit / Frontend
+# ----------------
+.streamlit/
+.cache/
