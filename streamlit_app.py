@@ -161,5 +161,3 @@ if show_visualizations:
             st.bar_chart(data["counts"])
         else:
             st.error("Failed to load severity distribution.")
-
-

@@ -13,8 +13,7 @@ python -m spacy download en_core_web_sm
 
 cp .env.example .env
 python scripts/init_db.py
-python scripts/ingest_sample.py  # ingests a few well-known CVEs
+python scripts/ingest_sample.py
 
-# Run API
 uvicorn app.api.main:app --reload --port 8000
 # open: http://127.0.0.1:8000/docs
